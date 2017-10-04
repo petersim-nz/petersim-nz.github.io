@@ -5,4 +5,13 @@
 
 body {
   font-family: verdana, arial, helvetica, sans-serif;
+  background-color: #ffc;
+}
+
+a {
+  color: #00f;
+}
+
+p, ol {
+  font-family: Lora, serif; /* Lora loaded from Google Fonts */
 }
