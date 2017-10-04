@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time and Habits</title>
+  <meta name="author" content="Peter Sim">
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+  </nav>
+  <h1>Time and Habits</h1>
+  <blockquote cite="https://www.lifeoptimizer.org/2007/03/08/66-best-quotes-on-time-management/">The common man is not concerned about the passage of time, the man of talent is driven by it.<br>&mdash;Arthur Schopenhauer (1788&ndash;1860) German Philosopher</blockquote>
+  <ul>
+    <li><strong>Which timebox and habits techniques did you try?</strong><br></li>
+    <li><strong>What did you find interesting?</strong><br></li>
+    <li><strong>What worked for you?</strong><br></li>
+    <li><strong>Which will you experiment further with?</strong><br></li>
+  </ul>
+</body>
+
+</html>
