@@ -13,7 +13,8 @@ a {
 }
 
 p, ul {
-  font-family: Lora, serif; /* Lora loaded from Google Fonts */
+  font-family: Lora, serif;
+  /* Lora loaded from Google Fonts */
 }
 
 blockquote {
@@ -38,12 +39,17 @@ blockquote:before {
 }
 
 blockquote cite {
-color: #999999;
-font-size: 14px;
-display: block;
-margin-top: 5px;
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
 }
 
 blockquote cite:before {
-content: "\2014 \2009";
+  content: "\2014 \2009";
+}
+
+.dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
