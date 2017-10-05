@@ -11,7 +11,7 @@ body {
 /************************************
 * Links: NB LVHA order
 *************************************/
-a:link, a:visited {
+a.special:link, a.special:visited {
   background-color: #060;
   color: #fff;
   border: 2px solid #060;
@@ -23,9 +23,14 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+a.special:hover, a.special:active {
   background-color: #fff;
   color: #000;
+}
+
+/* But sometimes you don't want those effects: */
+a.regular:link, a.regular:visited, a.regular:hover, a.regular:active {
+  color: #060;
 }
 
 p, ul, a {
