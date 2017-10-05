@@ -8,13 +8,33 @@ body {
   background-color: #ffc;
 }
 
-a {
-  color: #00f;
+/************************************
+* Links: NB LVHA order
+*************************************/
+a:link, a:visited {
+  background-color: #060;
+  color: #fff;
+  border: 2px solid #060;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  width: 150px;
+  display: inline-block;
 }
 
-p, ul {
+a:hover, a:active {
+  background-color: #fff;
+  color: #000;
+}
+
+p, ul, a {
   font-family: Lora, serif;
   /* Lora loaded from Google Fonts */
+}
+
+.question {
+  font-weight: bolder;
 }
 
 blockquote {
@@ -40,6 +60,7 @@ blockquote:before {
 
 blockquote cite {
   color: #999999;
+  font-style: normal;
   font-size: 14px;
   display: block;
   margin-top: 5px;
