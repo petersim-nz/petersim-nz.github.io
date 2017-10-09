@@ -8,6 +8,18 @@ body {
   background-color: #ffc;
 }
 
+h1 {
+  font-size: 36pt;
+  color: #006;
+  text-shadow: 2px 2px white;
+}
+
+h2 {
+  font-size: 24pt;
+  color: #006;
+  text-shadow: 1px 1px white;
+}
+
 /************************************
 * Links: NB LVHA order
 *************************************/
@@ -15,6 +27,7 @@ a.special:link, a.special:visited {
   background-color: #060;
   color: #fff;
   border: 2px solid #060;
+  border-radius: 5px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -24,8 +37,9 @@ a.special:link, a.special:visited {
 }
 
 a.special:hover, a.special:active {
-  background-color: #fff;
-  color: #000;
+  background-color: #0c6;
+  color: #006;
+  font-weight: bolder;
 }
 
 /* But sometimes you don't want those effects: */
@@ -78,4 +92,16 @@ blockquote cite:before {
 .dotted {
   text-decoration: underline;
   text-decoration-style: dotted;
+}
+
+img {
+  border: 2px solid #000;
+  vertical-align: top;
+}
+
+img.first {
+  width: 600px;
+}
+img.second {
+  width: 400px;
 }
