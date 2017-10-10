@@ -11,7 +11,7 @@
   box-shadow: 1rem 1rem 0.5rem #666;
 }
 
-.mainHeading { /* used on index page */
+.mainHeading { /* used on index page with only one line of heading */
   margin-top: 10rem;
   margin-bottom: 7rem;
 }
@@ -23,7 +23,8 @@
 
 /* Navigation */
 ul.mainMenu {
-  margin: 0;
+  /*margin: 0;*/
+  margin-bottom: 1.5rem;
   padding: 0;
   text-align: center;
   border-top: 0.2rem #060 solid;
@@ -48,4 +49,67 @@ ul.mainMenu li a:hover {
       -ms-transition: color .12s ease-in-out;
        -o-transition: color .12s ease-in-out;
           transition: color .12s ease-in-out;
+}
+
+.harakeke {
+  background: url(../images/harakeke.jpg) fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+.shadow {
+  border: thin #000 solid;
+  border-radius: 0.5rem;
+  box-shadow: 1rem 1rem 0.5rem #666;
+}
+
+.bodyText {
+  font-size: 2rem;
+}
+
+.footerStyle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: #030;
+  color: #fff;
+  border-radius: 5px;
+}
+
+blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #999999;
+  font-style: normal;
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
 }
