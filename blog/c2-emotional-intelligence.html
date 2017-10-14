@@ -2,38 +2,92 @@
 <html lang="en">
 
 <head>
+  <!-- Basic page setup -->
   <meta charset="utf-8">
+  <!-- Mobile specific -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cultural Blog</title>
+  <!-- Page information -->
+  <title>Rongohua o te Korimako: Blog</title>
   <meta name="author" content="Peter Sim">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="../icons/favicon.ico"> -->
+  <meta name="description" content="Responsive website EDA project">
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/custom.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
   <link rel="manifest" href="../icons/manifest.json">
   <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff"></head>
+  <meta name="theme-color" content="#fff">
+</head>
 
 <body>
-  <nav>
-    <a href="../index.html" class="special">Home</a>
-  </nav>
-  <h1>Cultural Blog</h1>
-  <blockquote cite="https://www.brainyquote.com/authors/daniel_goleman">
-    People tend to become more emotionally intelligent<br>as they age and mature.
-    <cite>Daniel Goleman (1943&ndash;) American Author</cite>
-  </blockquote>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <a href="../index.html"><img src="../images/logo.png" alt="Korimako--Bellbird" class="logo"></a>
+        </div> <!--one-third column-->
+        <div class="two-thirds column mainHeading2">
+          <h1 title="The Bellbird&rsquo;s Perch">Rongohua o te Korimako</h1>
+          <h2>Cultural Blog</h2>
+        </div> <!--two-thirds column-->
+      </div> <!--row-->
+      <div class="row">
+        <div class="twelve columns">
+          <nav>
+            <ul class="mainMenu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="blog-template.html">Blog</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="../resources.html">Resources</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div> <!--twelve columns-->
+      </div> <!--row-->
+    </div> <!--container-->
+  </header>
 
-  <h2>Emotional Intelligence</h2>
-  <ul>
-    <li><span class="question">What learnings did you take from the chapter?</span><br>With practice, anyone can acquire emotional competencies. The benefits of emotional intelligence include better work performance, leadership and creating happiness.
-    </li>
-    <li><span class="question">How did you find the two minutes of mindfulness?</span><br>As I write this, I am three days into the Headspace programme. So I have been practicing mindfulness. I find it really good: the time passes rapidly and there&rsquo;s a sense of calmness.
-    </li>
-  </ul>
+  <section class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <blockquote cite="https://www.brainyquote.com/authors/daniel_goleman">
+          People tend to become more emotionally intelligent as they age and mature.
+          <cite>Daniel Goleman (1943&ndash;) American Author</cite>
+        </blockquote>
+      </div> <!--twelve columns-->
+    </div> <!--row-->
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3>Emotional Intelligence</h3>
+        <ul>
+          <li>
+            <span class="question">What learnings did you take from the chapter?</span><br>
+            With practice, anyone can acquire emotional competencies. The benefits of emotional intelligence include better work performance, leadership and creating happiness.
+          </li>
+          <li>
+            <span class="question">How did you find the two minutes of mindfulness?</span><br>
+            As I write this, I am three days into the Headspace programme. So I have been practicing mindfulness. I find it really good: the time passes rapidly and there&rsquo;s a sense of calmness.
+          </li>
+        </ul>
+      </div> <!--twelve columns-->
+    </div> <!--row-->
+  </section>
+  <footer class="container">
+    <div class="row">
+      <div class="twelve columns footerStyle">
+        <p class="bodyText">Copyright &copy; 2017, Peter Sim</p>
+      </div> <!--twelve columns footerStyle-->
+    </div> <!--row-->
+  </footer>
 </body>
-
 </html>
