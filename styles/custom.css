@@ -117,3 +117,8 @@ blockquote cite:before {
 .question {
   font-weight: bolder;
 }
+
+.dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
