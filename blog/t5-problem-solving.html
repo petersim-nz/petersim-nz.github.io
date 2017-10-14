@@ -95,7 +95,7 @@
               <li>Does the filename have the correct suffix in the &lt;img&gt; tag? (Usually .jpg or .png)</li>
               <li>Is it a valid picture file? It is not unknown for students to save .jpg files as .png or vice versa.</li>
               <li>Has the student appended .jpg to the filename? In this case, the picture is actually filename.jpg.jpg!</li>
-              <li>One of the most difficult things to troubleshoot is where the student has inadvertently put a space on the end of their filename. [filename .png] but their image tag says, &lt;img src="filename.png"&gt;</li>
+              <li>One of the most difficult things to troubleshoot is where the student has inadvertently put a space on the end of their filename. [images/filename .png] but their image tag says, &lt;img src="images/filename.png"&gt;</li>
             </ol>
             <strong>Feelings:</strong> These are mistakes that beginners make and the solutions also involve teaching problem solving. At times it can be frustrating, but the teacher has to exhibit patience. Also it is important to complete the process by asking, &ldquo;What have you learned from this?&rdquo;<br>
             <strong>What did I learn?</strong> For commonly occurring problems, it is important to have a repertoire or checklist of things to try. This is honed by reflection. Also, in this case, there is usually a viable solution.
@@ -160,18 +160,18 @@
                   let doubleNumbers = numbers.map(function(number) {<br>
                     return number * 2<br>
                   })<br>
-                  console.log(doubleNumbers) // [2, 4, 6, 8, 10]
+                  console.log(doubleNumbers) // [ 2, 4, 6, 8, 10 ]
                 </code>
               </li>
               <li><span class="question">.filter()</span><br>
                 The filter() method checks every element in an array to see if it meets certain criteria
                 and returns a new array with the elements that do so.<br>
                 <code>
-                  let fruit = ['apple', 'apricot', 'banana', 'blueberry', 'cherry'];<br>
+                  let fruit = ['apple', 'apricot', 'banana', 'blueberry', 'cherry']<br>
                   let bFruit = fruit.filter(function(fruit) {<br>
-                    return fruit[0] === 'b';<br>
-                  });<br>
-                  console.log(bFruit); // [ 'banana', 'blueberry' ]
+                    return fruit[0] === 'b'<br>
+                  })<br>
+                  console.log(bFruit) // [ 'banana', 'blueberry' ]
                 </code>
               </li>
               <li><span class="question">.reduce()</span><br>
