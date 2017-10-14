@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic page setup -->
+  <meta charset="utf-8">
+  <!-- Mobile specific -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page information -->
+  <title>Rongohua o te Korimako: Blog</title>
+  <meta name="author" content="Peter Sim">
+  <meta name="description" content="Responsive website EDA project">
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/custom.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <link rel="manifest" href="../icons/manifest.json">
+  <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#fff">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <a href="../index.html"><img src="../images/logo.png" alt="Korimako--Bellbird" class="logo"></a>
+        </div> <!--one-third column-->
+        <div class="two-thirds column mainHeading2">
+          <h1 title="The Bellbird&rsquo;s Perch">Rongohua o te Korimako</h1>
+          <h2>Technical Blog&mdash;Problem Solving</h2>
+        </div> <!--two-thirds column-->
+      </div> <!--row-->
+      <div class="row">
+        <div class="twelve columns">
+          <nav>
+            <ul class="mainMenu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="blog-template.html">Blog</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="../resources.html">Resources</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div> <!--twelve columns-->
+      </div> <!--row-->
+    </div> <!--container-->
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <blockquote cite="https://www.brainyquote.com/quotes/quotes/t/thomasharr190761.html">
+          Problem solving is hunting. It is savage pleasure and we are born to it.
+          <cite>Thomas Harris (1940&ndash;) American Author</cite>
+        </blockquote>
+      </div> <!--twelve columns-->
+    </div> <!--row-->
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3>Experiences</h3>
+        <ul>
+          <li>
+            <span class="question">Tell your non-tech friend a story about a time you:</span><br>
+            <ol>
+              <li class="question">Got blocked on a simple problem</li>
+              <li class="question">Solved a problem in an elegant way</li>
+            </ol>
+            <span class="question">In both cases:</span><br>
+            <ul>
+              <li class="question">What was the problem?</li>
+              <li class="question">What problem solving techniques did you use?</li>
+              <li class="question">How did you feel throughout the process?</li>
+              <li class="question">What did you learn?</li>
+           </ul>
+          </li>
+          <li>
+            The following situation frequently occurs when teaching web design to secondary school students. As their teacher, I am also the chief problem solver when they get blocked.
+          </li>
+          <li><strong>Problem:</strong> &ldquo;My picture&rsquo;s not working!&rdquo;<br>
+            <strong>Techniques:</strong> Trying something followed by improving the process with reflection (both the teacher's and the learner's processes). There are a number of things to check:
+            <ol>
+              <li>Is the &lt;img&gt; tag written correctly?</li>
+              <li>Is the picture saved in the images folder?</li>
+              <li>Does the filename have the correct suffix in the &lt;img&gt; tag? (Usually .jpg or .png)</li>
+              <li>Is it a valid picture file? It is not unknown for students to save .jpg files as .png or vice versa.</li>
+              <li>Has the student appended .jpg to the filename? In this case, the picture is actually filename.jpg.jpg!</li>
+              <li>One of the most difficult things to troubleshoot is where the student has inadvertently put a space on the end of their filename. [filename .png] but their image tag says, &lt;img src="filename.png"&gt;</li>
+            </ol>
+            <strong>Feelings:</strong> These are mistakes that beginners make and the solutions also involve teaching problem solving. At times it can be frustrating, but the teacher has to exhibit patience. Also it is important to complete the process by asking, &ldquo;What have you learned from this?&rdquo;<br>
+            <strong>What did I learn?</strong> For commonly occurring problems, it is important to have a repertoire or checklist of things to try. This is honed by reflection. Also, in this case, there is usually a viable solution.
+          </li>
+          <li><strong>Problem:</strong> &ldquo;My picture&rsquo;s not working!&rdquo;<br>
+            <strong>Elegant technique:</strong> Let the browser tell you. Drag the picture file into an empty browser window.
+            <ul>
+              <li>Does the picture appear? If not, the file has been corrupted or is not a picture file.</li>
+              <li>Look at the address bar for the filename. Is it the correct images folder? Does the filename contain any %20 (space) characters? What suffix is the browser showing?</li>
+            </ul>
+            <strong>Feelings:</strong> This technique generally pinpoints the problem fastest. Solving the problem quickly brings a sense of accomplishment.<br>
+            <strong>What did I learn?</strong> Problems that are resolved quickly are usually not regarded as big ones. Plus, this is a useful strategy for students to try problem solving on their own.
+          </li>
+        </ul>
+
+        <h3>Techniques</h3>
+        <ul>
+          <li>
+            <span class="question">Reflect on how confident you feel using the problem solving techniques and process:</span><br>
+            I feel confident using most of these problem solving techniques.
+            <ul>
+              <li><span class="question">Trying something</span><br>
+                Perhaps this should be called &lsquo;Trial and Error&rsquo;. I avoid trying things until something works and leaving it there. It is important to understand why the problem occurred and to reflect on how it might be avoided or minimised in the future.
+              </li>
+              <li><span class="question">Rubber ducky method</span><br>
+                This is probably the last technique I would try: explaining the problem to an inanimate object. I would feel very self-conscious, particularly if I was in a workspace with others. That said, I have used the variant technique of explaining the problem to someone else and having the solution emerge from my description, before the other person had any input.
+              </li>
+              <li><span class="question">Pseudocode</span><br>
+                Writing an algorithm in structured English can be quite useful, particularly if the program logic is complex.
+              </li>
+              <li><span class="question">Reading error messages</span><br>
+                Error messages are an essential part of problem solving when programming. Firstly, they identify that something is going wrong and they can sometimes pinpoint the problem.
+              </li>
+              <li><span class="question">Console.logging</span><br>
+                After trying something, this is usually my second choice. When it is apparent that something has gone wrong, adding debugging statements to the code, or stepping through the program are usually very effective.
+              </li>
+              <li><span class="question">Googling</span><br>
+                It's rare to discover a problem that no one else has ever encountered. Sites like Stack Overflow are invaluable for finding discussions of problems and how others have resolved them.
+              </li>
+              <li><span class="question">Asking your peers for help</span><br>
+                Often it is a case of whether peers have sufficient expertise to help, or whether they are available to help in a timely fashion. Sometimes, this technique can turn into &lsquo;rubber ducky&rsquo; with a real person. However, if there is a suitable forum: email or a discussion group, calling out to peers can be useful.
+              </li>
+              <li><span class="question">Asking coaches for help</span><br>
+                I feel comfortable using this strategy, provided that coaches are willing and available in a timely way.
+              </li>
+              <li><span class="question">Improving your process with reflection</span><br>
+                I think this needs to be part of all of the above techniques. It is only by reflecting that we learn and can do better in the future.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h3>JavaScript Array Methods</h3>
+        <ul>
+          <li>
+            <span class="question">Explain to your non-tech friend what these functions do in your own words:</span><br>
+            The following functions are all array iterators or methods that operate on a list of values.
+            <ul>
+              <li><span class="question">.map()</span><br>
+                The map() method creates a new array (list) with the results of applying a function to every element in an existing array.<br>
+                <code>
+                  let numbers = [1, 2, 3, 4, 5]<br>
+                  let doubleNumbers = numbers.map(function(number) {<br>
+                    return number * 2<br>
+                  })<br>
+                  console.log(doubleNumbers) // [2, 4, 6, 8, 10]
+                </code>
+              </li>
+              <li><span class="question">.filter()</span><br>
+                The filter() method checks every element in an array to see if it meets certain criteria
+                and returns a new array with the elements that do so.<br>
+                <code>
+                  let fruit = ['apple', 'apricot', 'banana', 'blueberry', 'cherry'];<br>
+                  let bFruit = fruit.filter(function(fruit) {<br>
+                    return fruit[0] === 'b';<br>
+                  });<br>
+                  console.log(bFruit); // [ 'banana', 'blueberry' ]
+                </code>
+              </li>
+              <li><span class="question">.reduce()</span><br>
+                The reduce() method reduces an array to a single value. It can:
+                <ul>
+                  <li>Reduce an array of numeric values to their sum;</li>
+                  <li>Reduce an array of arrays to a single array;</li>
+                  <li>Reduce one of an object&rsquo;s properties to an array.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div> <!--twelve columns-->
+    </div> <!--row-->
+  </section>
+</body>
+
+</html>
