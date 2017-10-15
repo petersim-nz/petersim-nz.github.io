@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BS Colours</title>
+  <meta name="author" content="Peter Sim">
+  <meta name="description" content="A tool for exploring BS colours.">
+  <link rel="stylesheet" href="colour-styles.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+  <link rel="manifest" href="../../icons/manifest.json">
+  <link rel="mask-icon" href="../../icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#fff">
+  <script src="colour-app2.js"></script>
+</head>
+<body>
+  <h1 class="mainHeading">BS Colours</h1>
+  <div id="css-link">background-color: white;<br>color: black;</div>
+  <button class="button" id="copy-button" data-clipboard-target="#css-link">Copy</button>
+  <script>
+    drawCircles(216)
+  </script>
+  <button class="button" onclick="alert('Left-click: Set background colour.\r\nRight-click: Set foreground colour.')")>Help</button>
+  <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>
+  <script>
+    let clipboard = new Clipboard('#copy-button')
+  </script>
+</body>
+</html>
