@@ -49,7 +49,7 @@ body {
   border-radius: 5px;
   bottom: 26px;
   color: #fff;
-  content: attr(title);
+  content: attr(data-tooltip);
   left: 20%;
   padding: 5px 15px;
   position: absolute;
