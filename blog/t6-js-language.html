@@ -73,6 +73,7 @@
         <ul>
           <li>
             <span class="question">Parentheses ()</span><br>
+            In researching possible answers for this section, I did not realise that the uses of parentheses were so numerous. I would hazard a guess that these symbols must be among the most widely used ones in JavaScript. I cannot promise that the following list is exhaustive.
             <ol>
               <li>
                 Parentheses are also called &lsquo;the grouping operator&rsquo; which controls the precedence of evaluation in expressions. The normal order of precedence in mathematical operations is sometimes abbreviated BEDMAS, an acronym for Brackets (really parentheses), Exponents, Division, Multiplication, Addition, Subtractions. For example:<br>
@@ -88,33 +89,59 @@
                   &nbsp;&nbsp;} </code>
               </li>
               <li>
+                In a switch statement, the expression being evaluated is contained in parentheses:<br><code>
+                  &nbsp;switch (vegetable) { // Expression <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case 'potato': <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uses = 'chips' <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case 'lettuce': <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uses = 'salads' <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;default: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uses = 'eat it raw' <br>
+                  &nbsp;&nbsp;} </code>
+              </li>
+              <li>
 
+              </li>
+              <li>
+                Parentheses are used in function definitions, and also when the function is called. Parentheses contain the function parameters in the definition and the arguments when the function is invoked:<br><code>
+                  &nbsp;function cube(num) { // Parentheses for parameter num <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return num * num * num <br>
+                  &nbsp;&nbsp;}<br>
+                  console.log( cube(4) ) // 64: Parentheses for argument</code>
               </li>
               <li>
                 Methods have parentheses at the end of their name. Methods are actions that primitive data types or objects can perform. For example, consider the toUpperCase method:<br><code>
-                  &nbsp;fName = 'Peter'<br>
+                  &nbsp;let fName = 'Peter'<br>
                   &nbsp;&nbsp;console.log( fName.toUpperCase() ) // PETER</code>
-              </li>
-              <li>
-
               </li>
             </ol>
           </li>
           <li>
             <span class="question">Brackets []</span><br>
-            xxx
+            Brackets are sometimes called square brackets. Their primary use in JavaScript is to create and refer to arrays or lists of values:<br><code>
+              &nbsp;let cars = ['Honda', 'Toyota', 'Subaru', 'Mazda']<br>
+              &nbsp;&nbsp;console.log(cars[2]) // Subaru</code><br>
+            In JavaScript, arrays are objects.
           </li>
           <li>
-            <span class="question">Braces {}</span><br>
-            xxx
+            <span class="question">Braces </span>{}<br>
+            Braces are also referred to as curly braces. They are used to define objects. Objects have properties written as name:value pairs: <br><code>
+              &nbsp;let dog = {petName: 'Fido', breed: 'Labrador', colour: 'black', vaccinated: true}<br>
+              &nbsp;&nbsp;console.log(dog.petName) // Fido</code>
           </li>
           <li>
             <span class="question">Single quotes ''</span><br>
-            xxx
+            <span class="question">Double quotes </span>""<br>
+            Single and double quotes are used to delineate strings (collections of characters).<br><code>
+              &nbsp;let dogName = "Bruiser"<br>
+              &nbsp;&nbsp;let dogName = 'Bruiser'</code><br>
+            Single or double quotes may be used, as long as the same type pairs up.<br>A convention is to use double quotes for HTML attributes, and single quotes in JavaScript code.<br>Where it&rsquo;s necessary to include quotes inside a string, they can be escaped:<br><code>
+              &nbsp;let description = '"Bruiser\'s a fine dog"'</code><br>
           </li>
           <li>
-            <span class="question">Double quotes ""</span><br>
-            xxx
+
           </li>
         </ul>
       </div> <!--twelve columns-->
