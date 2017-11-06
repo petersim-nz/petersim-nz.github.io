@@ -1,0 +1,74 @@
+<!--
+/**********************************\
+| HTML for jsCalculator            |
+| Peter Sim, November, 2017        |
+\*********************************/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic page setup -->
+  <meta charset="utf-8">
+  <!-- Mobile specific -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page information -->
+  <title>jsCalculator</title>
+  <meta name="author" content="Peter Sim">
+  <meta name="description" content="Project to create a working calculator">
+  <!-- CSS files -->
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+  <h1>JavaScript Calculator</h1>
+  <div id="calculator">
+    <div id = 'screen'>
+      <div id="display1">
+        3&times;4=12
+      </div>
+      <div id="display2">
+        3&times;4=12
+      </div>
+    </div>
+    <div id="keyField">
+      <!-- First Row -->
+      <button value="AC" class="buttons standardsize">AC</button>
+      <button value="CE" class="buttons standardsize">CE</button>
+      <button value="x2" class="buttons standardsize">x²</button>
+      <button value="sr" class="buttons standardsize">√x</button>
+
+      <!-- Second Row -->
+      <button value="%" class="buttons standardsize">%</button>
+      <button value="/" class="buttons standardsize">&divide;</button>
+      <button value="*" class="buttons standardsize">&times;</button>
+      <button value="-" class="buttons standardsize">-</button>
+
+      <!-- Third Row -->
+      <button value="7" class="buttons standardsize">7</button>
+      <button value="8" class="buttons standardsize">8</button>
+      <button value="9" class="buttons standardsize">9</button>
+      <button value="+" class="buttons sumbutton">+</button>
+
+      <!-- Fourth Row -->
+      <button value="4" class="buttons standardsize">4</button>
+      <button value="5" class="buttons standardsize">5</button>
+      <button value="6" class="buttons standardsize">6</button>
+
+      <!-- Fifth Row -->
+      <button value="1" class="buttons standardsize">1</button>
+      <button value="2" class="buttons standardsize">2</button>
+      <button value="3" class="buttons standardsize">3</button>
+      <button value="=" class="buttons equalbutton">=</button>
+
+      <!-- Sixth Row -->
+      <button value="pm" class="buttons standardsize">&plusmn;</button>
+      <button value="0" class="buttons standardsize">0</button>
+      <button value="." class="buttons standardsize">.</button>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
