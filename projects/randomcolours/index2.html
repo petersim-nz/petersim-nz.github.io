@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Basic page setup -->
+  <meta charset="utf-8">
+  <!-- Mobile specific -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page information -->
+  <title>Colour Details for</title>
+  <meta name="author" content="Peter Sim">
+  <meta name="description" content="A page to display information about a colour">
+  <!-- CSS files -->
+  <link href="styles/styles2.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+  <link rel="manifest" href="../../icons/manifest.json">
+  <link rel="mask-icon" href="../../icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#fff">
+  <!-- JavaScript files -->
+  <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/colour-app4.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <section class="column">
+      <header class="header">
+        <h1 class="mainHeading">xxx</h1>
+        <button class="backButton" onclick="history.back()">Back to Random Colours</button>
+      </header>
+      <table>
+        <tr title="Hex string or colour name">
+          <td><input id="colourName"></td>
+          <td><button class="btn" data-clipboard-target="#colourName">Copy</button></td>
+        </tr>
+        <tr title="Red, Green and Blue values from 0 to 255">
+          <td><input id="rgb"></td>
+          <td><button class="btn" data-clipboard-target="#rgb">Copy</button></td>
+        </tr>
+        <tr title="Red, Green and Blue percentages">
+          <td><input id="rgbp"></td>
+          <td><button class="btn" data-clipboard-target="#rgbp">Copy</button></td>
+        </tr>
+        <tr title="Hue, Saturation and Value: an alternative representation of the RGB color model">
+          <td><input id="hsv"></td>
+          <td><button class="btn" data-clipboard-target="#hsv">Copy</button></td>
+        </tr>
+        <tr title="Hue, Saturation and Lightness: an alternative representation of the RGB color model">
+          <td><input id="hsl"></td>
+          <td><button class="btn" data-clipboard-target="#hsl">Copy</button></td>
+        </tr>
+      </table>
+      <footer>
+        <hr>
+        <p>Peter Sim, 2017. Apache Licence 2.0</p>
+      </footer>
+    </section>
+    <section class="column">
+      <table>
+        <tr class="pal" title="A single base hue extended with its shades, tones and tints.">
+          <td>
+            Monochromatic Colours<br>
+            <div class="palettes mono">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </td>
+          <td><button class="btn" id="mono" data-clipboard-text="">Copy</button></td>
+        </tr>
+        <tr class="pal" title="Colours that are next to each other on the colour wheel.">
+          <td>
+            Analogous Colours<br>
+            <div class="palettes analogous">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </td>
+          <td><button class="btn" id="analogous" data-clipboard-text="">Copy</button></td>
+        </tr>
+        <tr class="pal" title="Colours opposite each other on the colour wheel.">
+          <td>Complementary Colours<br>
+            <div class="palettes complementary">
+              <div></div>
+              <div></div>
+            </div>
+          </td>
+          <td><button class="btn" id="complementary" data-clipboard-text="">Copy</button></td>
+        </tr>
+        <tr class="pal" title="The base colour along with two colours adjacent to its complement.">
+          <td>Split-Complementary Colours<br>
+            <div class="palettes splitComplementary">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </td>
+          <td><button class="btn" id="splitComplementary" data-clipboard-text="">Copy</button></td>
+        </tr>
+        <tr class="pal" title="The base colour and two other colours evenly spaced on the colour wheel.">
+          <td>Triadic Colours<br>
+            <div class="palettes triadic">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </td>
+          <td><button class="btn" id="triadic" data-clipboard-text="">Copy</button></td>
+        </tr>
+        <tr class="pal" title="Four colours evenly spaced on the colour wheel.">
+          <td>Tetradic Colours<br>
+            <div class="palettes tetradic">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </td>
+          <td><button class="btn" id="tetradic" data-clipboard-text="">Copy</button></td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

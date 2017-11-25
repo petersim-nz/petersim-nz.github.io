@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Basic page setup -->
+  <meta charset="utf-8">
+  <!-- Mobile specific -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page information -->
+  <title>Random Colours</title>
+  <meta name="author" content="Peter Sim">
+  <meta name="description" content="A tool for experimenting with random colours">
+  <!-- CSS files -->
+  <link href="styles/styles.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+  <link rel="manifest" href="../../icons/manifest.json">
+  <link rel="mask-icon" href="../../icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#fff">
+  <!-- JavaScript files -->
+  <script src="js/randomColor.js"></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/colour-app3.js"></script>
+</head>
+
+<body>
+  <h1 class="mainHeading">Random Colours</h1>
+  <form class="getData">
+    <select name="colours" id="colours" onchange="newColours()">
+      <option value="red">Red</option>
+      <option value="orange">Orange</option>
+      <option value="yellow">Yellow</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
+      <option value="pink">Pink</option>
+      <option value="monochrome">Greys</option>
+      <option value="dark">Dark Colours</option>
+      <option value="light">Light Colours</option>
+      <option value="random">Random Colours</option>
+    </select>
+  </form>
+  <script>drawCircles(50)</script>
+  <footer>
+    <hr>
+    <p><strong>Random Colours</strong> by Peter Sim, 2017. Apache Licence 2.0</p>
+    <p>My thanks to the authors of the following JavaScript libraries:</p>
+    <ul>
+      <li>David Merfield&rsquo;s <a href="https://randomcolor.llllll.li/" target="_blank">Random Color Generator</a></li>
+      <li>Brian Grinstead&rsquo;s <a href="http://bgrins.github.io/TinyColor/" target="_blank">TinyColor</a></li>
+      <li>Zeno Rocha&rsquo;s <a href="https://clipboardjs.com/" target="_blank">clipboard.js</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
