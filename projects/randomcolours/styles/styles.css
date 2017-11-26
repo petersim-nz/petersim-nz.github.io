@@ -45,6 +45,10 @@ body {
   position: relative;
 }
 
+.colourDisplay div:hover {
+  cursor: pointer;
+}
+
 .colourDisplay div:hover:after {
   background: #333;
   background: rgba(0,0,0,.8);
