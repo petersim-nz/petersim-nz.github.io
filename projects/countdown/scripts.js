@@ -10,8 +10,7 @@
 document.addEventListener('DOMContentLoaded', start)
 
 function start () {
-  // const targetTime = 'January 8 2018 08:30:00 GMT+1300'
-  const targetTime = 'December 18 2017 09:14:00 GMT+1300'
+  const targetTime = 'January 8 2018 08:30:00 GMT+1300'
   initTimer('countdown', targetTime)
 }
 
