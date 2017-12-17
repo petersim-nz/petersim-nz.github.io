@@ -51,6 +51,7 @@ h2 {
   font-weight: 100;
   text-align: center;
   font-size: 60px;
+  text-shadow: 1pt 1pt 1pt #999;
 }
 
 .countdown > div {
