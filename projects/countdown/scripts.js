@@ -10,7 +10,8 @@
 document.addEventListener('DOMContentLoaded', start)
 
 function start () {
-  const targetTime = 'January 8 2018 08:30:00 GMT+1300'
+  // const targetTime = 'January 8 2018 08:30:00 GMT+1300'
+  const targetTime = 'December 18 2017 09:14:00 GMT+1300'
   initTimer('countdown', targetTime)
 }
 
@@ -36,6 +37,7 @@ function initTimer(id, endTime) {
   let hoursSpan = timer.querySelector('.hours')
   let minutesSpan = timer.querySelector('.minutes')
   let secondsSpan = timer.querySelector('.seconds')
+  let timeInterval = undefined
 
   function updateTimer() {
     let theTime = calcTimeLeft(endTime)
@@ -45,13 +47,17 @@ function initTimer(id, endTime) {
     secondsSpan.innerHTML = ('0' + theTime.seconds).slice(-2)
 
     if (theTime.total <= 0) {
-      clearInterval(timeInterval)
+      if (timeInterval !== undefined) {
+        clearInterval(timeInterval)
+      }
+      document.getElementById('heading').innerText = 'Bootcamp Started'
+      document.getElementById('countdown').style.display = 'none'
     }
   }
 
   updateTimer()
   // call updateTimer() once per second
-  let timeInterval = setInterval(updateTimer, 1000)
+  timeInterval = setInterval(updateTimer, 1000)
 }
 
 let goBack = function goBack(fallback) {
@@ -65,5 +71,5 @@ let goBack = function goBack(fallback) {
 
     setTimeout(function() {
         if (useFallback) { window.location.href = fallback }
-    }, 100) 
+    }, 100)
 }
