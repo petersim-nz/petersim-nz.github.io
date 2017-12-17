@@ -5,6 +5,7 @@ body {
 
 figure {
   text-align: center;
+  cursor: pointer;
 }
 
 img {
